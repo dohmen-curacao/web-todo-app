@@ -9,6 +9,7 @@ def add_todo():
     todo = todo.capitalize()
     todos.append(todo)
     functions.write_todos(todos)
+    st.session_state['new_todo'] = ""
 
 st.title("My Todo app")
 st.subheader("This is my web todo app")
